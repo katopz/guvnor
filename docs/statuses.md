@@ -1,6 +1,6 @@
 # Statuses
 
-## Process
+## Process
 
 These are the meanings of the possible values for the ProcessInfo object's `status` property.
 
