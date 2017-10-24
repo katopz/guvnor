@@ -155,7 +155,7 @@ daemon.findProcessInfoByName(name, function(error, processInfo) {
 })
 ```
 
-### removeProcess(id, function(error)
+### removeProcess(id, function(error)
 
 Remove a stopped process
 
@@ -311,7 +311,7 @@ daemon.startProcessAsUser
 
 ## Process methods
 
-### kill(callback(error))
+### kill(callback(error))
 
 To stop a process, first connect to the daemon, then use the daemon to connect to the process and kill it.
 
@@ -323,7 +323,7 @@ daemon.findProcessInfoById(id, function(error, managedProcess) {
 })
 ```
 
-### Send a process an event
+### Send a process an event
 
 Causes the global process object to emit an event in the managed process.
 
@@ -363,7 +363,7 @@ process.on('other:event', function(callback) {
 })
 ```
 
-### Send a process a signal
+### Send a process a signal
 
 ```javascript
 // id is processInfo.id. Alternatively use findProcessInfoByName or findProcessInfoByPid
@@ -380,7 +380,7 @@ process.on('SIGHUP', function() {
 });
 ```
 
-### Write to stdin for a process
+### Write to stdin for a process
 
 ```javascript
 // id is processInfo.id. Alternatively use findProcessInfoByName or findProcessInfoByPid

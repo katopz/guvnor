@@ -46,27 +46,27 @@ guvnor.on('worker:starting', function(clusterInfo, workerInfo) {
 
 Note that the signature for cluster worker events is slightly different - they receive both the cluster and worker process information.
 
-### 'process:starting' processInfo
+### 'process:starting' processInfo
 
 A process is about to be created.
 
-### 'process:forked' processInfo
+### 'process:forked' processInfo
 
 A process is now active (although the v8 instance behind it may still be initialising).
 
-### 'process:failed' processInfo, error
+### 'process:failed' processInfo, error
 
 A process wrapper initialised incorrectly - hopefully you will never see this
 
-### 'process:started' processInfo
+### 'process:started' processInfo
 
 A process has started and your module code has been loaded.
 
-### 'process:errored' processInfo, error
+### 'process:errored' processInfo, error
 
 Your module code threw an exception on start up.
 
-### 'process:ready' processInfo
+### 'process:ready' processInfo
 
 A connection has been established between guvnor and the managed process. All systems go.
 
@@ -78,7 +78,7 @@ A process is about to stop.
 
 A process experienced an uncaught exception after startup.
 
-### 'process:fatality' processInfo
+### 'process:fatality' processInfo
 
 A process experienced an uncaught exception and there were no [handlers](http://nodejs.org/api/process.html#process_event_uncaughtexception) for the exception.  The process will now exit with a non-zero error code which will cause it to be be restarted.
 
@@ -174,7 +174,7 @@ New app refs were pulled from the upstream repository.  The passed `appInfo` obj
 
 The app represented by `appInfo` was switched from `oldRef` to `newRef`.  A ref is a git branch or tag.
 
-## Log events
+## Log events
 
 There are four types of log event: `info`, `warn`, `error` and `debug`.  Log events are emitted by processes, cluster managers, cluster workers and the guvnor daemon itself.
 

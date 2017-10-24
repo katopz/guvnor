@@ -99,7 +99,7 @@ guvnor.startProcess(path, opts, function(error, processInfo) {
 })
 ```
 
-### Stop
+### Stop
 
 Stop a process
 
@@ -111,7 +111,7 @@ guvnor.connectToProcess(id, function(error, managedProcess) {
 })
 ```
 
-### Send a process an event
+### Send a process an event
 
 Causes the global process object to emit an event in the managed process.
 
